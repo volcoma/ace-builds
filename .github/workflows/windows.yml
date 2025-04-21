@@ -24,7 +24,6 @@ jobs:
       with:
         repository: volcoma/ace
         token: ${{ secrets.pat }}
-        token: ${{ secrets.pat }}
         submodules: recursive
     - name: Setup MSVC
       if: matrix.config.cc != 'mingw'
