@@ -13,8 +13,8 @@ jobs:
         # - { os: "macos-12", xcode: "14.0", arch: "x64" }
         # - { os: "macos-12", xcode: "14.1", arch: "x64" }
         # - { os: "macos-12", xcode: "14.2", arch: "x64" }
-        - { os: "macos-14", xcode: "latest", arch: "x64" }
-        - { os: "macos-15", xcode: "latest", arch: "x64" }
+        - { os: "macos-14", xcode: "16.2", arch: "x64" }
+        - { os: "macos-15", xcode: "16.3", arch: "x64" }
     #name: "xcode-${{matrix.config.xcode}}"
     steps:
     - name: Setup
