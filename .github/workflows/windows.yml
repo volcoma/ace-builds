@@ -1,6 +1,10 @@
 name: windows
 
-on: [push, pull_request]
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0  2  *  *  *'   # every night at 02:00 UTC
+#on: [push, pull_request]
 
 jobs:
   build:
